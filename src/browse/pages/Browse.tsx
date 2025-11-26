@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import {
   Search,
   MapPin,
@@ -47,7 +47,7 @@ const JobCard = ({ job }: { job: JobItem }) => {
       </div>
 
       {/* Logo */}
-      <div className="flex-shrink-0">
+      <div className="shrink-0">
         <div className="w-16 h-16 md:w-20 md:h-20 rounded-lg border border-gray-100 overflow-hidden bg-white flex items-center justify-center p-1">
           <img
             src={
@@ -64,7 +64,7 @@ const JobCard = ({ job }: { job: JobItem }) => {
       </div>
 
       {/* Content */}
-      <div className="flex-grow min-w-0">
+      <div className="grow min-w-0">
         <div className="pr-8">
           <h3
             className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-1"
@@ -286,7 +286,7 @@ export default function Browse() {
               <div className="bg-blue-600 text-white p-1.5 rounded-lg">
                 <Briefcase className="w-6 h-6" />
               </div>
-              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500">
+              <span className="text-xl font-bold bg-clip-text text-transparent bg-linear-to-r from-blue-700 to-blue-500">
                 CEDT Intern
               </span>
             </div>
