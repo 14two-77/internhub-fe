@@ -1,29 +1,29 @@
-interface Tag {
+export interface Tag {
   tagId: number;
   tagName: string;
 }
 
-interface Company {
+export interface Company {
   companyId: number;
   companyNameTh: string;
   companyNameEn: string;
-  logoUrl: string;
-  website: string;
-  facebook: string;
-  line: string;
+  logoUrl: string | null;
+  website: string | null;
+  facebook: string | null;
+  line: string | null;
 }
 
-interface CompensationType {
+export interface CompensationType {
   compensationTypeId: number;
   compensationType: string;
 }
 
-interface JobItem {
+export interface JobOpening {
   openingId: number;
   sessionId: number;
   company: Company;
   title: string;
-  description: string;
+  description: string | null;
   quota: number;
   openForCooperativeInternship: boolean;
   compensationAmount: number | null;
@@ -44,17 +44,21 @@ interface JobItem {
   isBookmarked: boolean;
 }
 
-interface Meta {
-  totalItem: number;
-  itemCount: number;
-  itemsPerPage: number;
-  totalPage: number;
-  currentPage: number;
+export type SelectionStatus =
+  | "interested"
+  | "not_interested"
+  | "applied"
+  | "interviewing"
+  | "got_offer"
+  | null;
+
+export interface SelectionState {
+  selections: Record<number, SelectionStatus>;
+  setStatus: (openingId: number, status: SelectionStatus) => void;
+  getStatus: (openingId: number) => SelectionStatus;
 }
 
-interface DataResponse {
-  items: JobItem[];
-  meta: Meta;
+export interface ThemeState {
+  theme: "light" | "dark";
+  toggleTheme: () => void;
 }
-
-export type { Tag, Company, CompensationType, JobItem, Meta, DataResponse };

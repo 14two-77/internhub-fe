@@ -1,1 +1,62 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+
+  /* 1. Global scrollbar (Firefox) */
+  :root {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+    /* slate-300 */
+  }
+
+  :root.dark {
+    scrollbar-color: #334155 transparent;
+    /* slate-700 */
+  }
+
+  /* 2. Webkit (Chrome, Safari, Edge) - Includes Main Window */
+
+  /* Target the scrollbar globally */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    /* slate-300 */
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+
+  /* Dark mode logic for the scrollbar thumb */
+  /* We use :root.dark to target the main window when the dark class is on <html> */
+  :root.dark ::-webkit-scrollbar-thumb,
+  .dark ::-webkit-scrollbar-thumb {
+    background-color: #334155;
+    /* slate-700 */
+  }
+
+  /* Hover states */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #94a3b8;
+    /* slate-400 */
+  }
+
+  :root.dark ::-webkit-scrollbar-thumb:hover,
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background-color: #475569;
+    /* slate-600 */
+  }
+}
+
+.dark .prose li span {
+  color: rgb(203 213 225) !important; /* slate-300 */
+}

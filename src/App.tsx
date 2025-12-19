@@ -1,14 +1,21 @@
-import { BrowserRouter, Route, Routes } from "react-router";
-import Browse from "./browse/pages/Browse";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { HashRouter } from "react-router-dom";
+import { AppWrapper } from "./pages/AppWrapper";
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 60 * 5, // 5 minutes
+      retry: 1,
+    },
+  },
+});
 
-const App = () => {
+export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/browse" element={<Browse />} />
-      </Routes>
-    </BrowserRouter>
+    <QueryClientProvider client={queryClient}>
+      <HashRouter>
+        <AppWrapper />
+      </HashRouter>
+    </QueryClientProvider>
   );
-};
-
-export default App;
+}
