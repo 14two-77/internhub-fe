@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import type { SelectionState, SelectionStatus } from "../types";
+import type { SelectionState } from "../types";
 
 export const useSelectionStore = create<SelectionState>()(
   persist(
@@ -14,6 +14,6 @@ export const useSelectionStore = create<SelectionState>()(
     }),
     {
       name: "intern-selection-storage",
-    },
-  ),
+    }
+  )
 );
