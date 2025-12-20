@@ -25,7 +25,7 @@ export const SelectionsPage = () => {
   const [verticalSort, setVerticalSort] = useState<
     "manual" | "compensation" | "quota" | "students"
   >("manual");
-  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
+  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
   const [jobOrder, setJobOrder] = useState<Record<string, number[]>>(() => {
     // Initialize from localStorage
     try {
