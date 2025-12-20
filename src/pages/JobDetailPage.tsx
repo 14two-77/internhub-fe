@@ -131,6 +131,11 @@ export const JobDetailPage = () => {
               <div
                 className="prose prose-slate dark:prose-invert max-w-none leading-relaxed 
                            text-slate-600 dark:text-slate-300
+
+                           prose-ul:list-disc prose-ul:pl-6
+                           prose-ol:list-decimal prose-ol:pl-6
+                         prose-li:marker:text-slate-400 dark:prose-li:marker:text-slate-500
+
                            dark:prose-headings:text-white dark:prose-p:text-slate-300 dark:prose-strong:text-white dark:prose-li:text-slate-300"
                 dangerouslySetInnerHTML={{ __html: job.description || "" }}
               />
@@ -144,6 +149,11 @@ export const JobDetailPage = () => {
                 <div
                   className="prose prose-slate dark:prose-invert max-w-none leading-relaxed 
                              text-slate-600 dark:text-slate-300
+
+                             prose-ul:list-disc prose-ul:pl-6
+                             prose-ol:list-decimal prose-ol:pl-6
+                             prose-li:marker:text-slate-400 dark:prose-li:marker:text-slate-500
+
                              dark:prose-headings:text-white dark:prose-p:text-slate-300 dark:prose-strong:text-white dark:prose-li:text-slate-300"
                   dangerouslySetInnerHTML={{ __html: job.requirements }}
                 />
