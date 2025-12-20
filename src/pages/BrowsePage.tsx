@@ -7,11 +7,14 @@ import { fetchJobs } from "../services/api";
 import { useSelectionStore } from "../stores/selectionStore";
 import type { Tag } from "../types";
 import TagMultiSelect from "../components/MultiSelect";
+import { useDatasetStore } from "../stores/datasetStore";
 
 export const BrowsePage: React.FC = () => {
+  const dataset = useDatasetStore((s) => s.current);
+
   const { data: jobs, isLoading } = useQuery({
-    queryKey: ["jobs"],
-    queryFn: fetchJobs,
+    queryKey: ["jobs", dataset],
+    queryFn: () => fetchJobs(),
   });
 
   const [search, setSearch] = useState("");
@@ -234,16 +237,54 @@ export const BrowsePage: React.FC = () => {
               <label className="text-sm font-medium text-slate-700 dark:text-slate-300">
                 Sort by:
               </label>
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value as any)}
-                className="px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              <div
+                className="
+    relative inline-block text-left sm:w-auto rounded-lg
+    bg-white dark:bg-slate-800
+    text-slate-900 dark:text-slate-100
+    ring-1 ring-inset ring-slate-200 dark:ring-slate-700
+    focus-within:ring-2 focus-within:ring-indigo-500
+    transition-colors duration-200
+    pr-2
+  "
               >
-                <option value="none">None</option>
-                <option value="compensation">Compensation</option>
-                <option value="quota">Quota</option>
-                <option value="students">Students Selected</option>
-              </select>
+                <select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value as any)}
+                  className="
+      block w-full rounded-lg border-0
+      bg-transparent
+      py-2 pl-3 pr-10
+      text-sm cursor-pointer
+      outline-none
+      appearance-none
+    "
+                >
+                  <option value="none" className="bg-white dark:bg-slate-800">
+                    None
+                  </option>
+                  <option
+                    value="compensation"
+                    className="bg-white dark:bg-slate-800"
+                  >
+                    Compensation
+                  </option>
+                  <option value="quota" className="bg-white dark:bg-slate-800">
+                    Quota
+                  </option>
+                  <option
+                    value="students"
+                    className="bg-white dark:bg-slate-800"
+                  >
+                    Students Selected
+                  </option>
+                </select>
+
+                {/* Optional custom arrow (if you want full control) */}
+                <span className="pointer-events-none absolute inset-y-0 right-2 flex items-center text-slate-400 dark:text-slate-500">
+                  ▼
+                </span>
+              </div>
             </div>
 
             {sortBy !== "none" && (

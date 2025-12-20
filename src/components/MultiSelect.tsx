@@ -48,7 +48,7 @@ const TagMultiSelect: React.FC<TagMultiSelectProps> = ({
     <div ref={wrapperRef} className="relative text-sm">
       {/* Selected chips & control */}
       <div
-        className="flex items-center flex-wrap gap-2 px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 cursor-default h-full"
+        className="cursor-pointer flex items-center flex-wrap gap-2 px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 cursor-default h-full"
         onClick={() => setOpen((s) => !s)}
       >
         {/* Chips */}
@@ -65,7 +65,7 @@ const TagMultiSelect: React.FC<TagMultiSelectProps> = ({
                 .map((o) => (
                   <span
                     key={o!.tagId}
-                    className="flex items-center gap-1 px-3 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-200 border border-indigo-100 dark:border-indigo-800"
+                    className="cursor-default flex items-center gap-1 px-3 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-200 border border-indigo-100 dark:border-indigo-800"
                   >
                     <span className="text-xs font-medium truncate max-w-36">
                       #{o!.tagName}
@@ -75,7 +75,7 @@ const TagMultiSelect: React.FC<TagMultiSelectProps> = ({
                         e.stopPropagation();
                         toggle(o!.tagId);
                       }}
-                      className="p-0.5 rounded-full hover:bg-indigo-100 dark:hover:bg-indigo-800"
+                      className="cursor-pointer p-0.5 rounded-full hover:bg-indigo-100 dark:hover:bg-indigo-800"
                       aria-label={`Remove ${o!.tagName}`}
                     >
                       <X className="w-3 h-3" />
@@ -93,7 +93,7 @@ const TagMultiSelect: React.FC<TagMultiSelectProps> = ({
                 e.stopPropagation();
                 onChange([]);
               }}
-              className="text-xs text-slate-500 dark:text-slate-400 px-2 py-1 rounded hover:bg-slate-100 dark:hover:bg-slate-700"
+              className="cursor-pointer text-xs text-slate-500 dark:text-slate-400 px-2 py-1 rounded hover:bg-slate-100 dark:hover:bg-slate-700"
               aria-label="Clear selected tags"
             >
               Clear
@@ -144,7 +144,7 @@ const TagMultiSelect: React.FC<TagMultiSelectProps> = ({
                       e.stopPropagation();
                       toggle(o.tagId);
                     }}
-                    className={`w-full text-left px-3 py-2 flex items-center justify-between gap-2 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors ${
+                    className={`cursor-pointer w-full text-left px-3 py-2 flex items-center justify-between gap-2 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors ${
                       picked ? "bg-slate-50 dark:bg-slate-700" : ""
                     }`}
                   >

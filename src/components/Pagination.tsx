@@ -63,7 +63,7 @@ export const Pagination = ({
         <button
           onClick={() => onPageChange(currentPage - 1)}
           disabled={currentPage === 1}
-          className="p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          className="p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer transition-colors"
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
@@ -80,7 +80,7 @@ export const Pagination = ({
             <button
               key={page}
               onClick={() => onPageChange(page as number)}
-              className={`w-10 h-10 rounded-lg text-sm font-semibold transition-colors ${
+              className={`cursor-pointer w-10 h-10 rounded-lg text-sm font-semibold transition-colors ${
                 currentPage === page
                   ? "bg-indigo-600 text-white shadow-md shadow-indigo-200 dark:shadow-none"
                   : "bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"
@@ -94,7 +94,7 @@ export const Pagination = ({
         <button
           onClick={() => onPageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
-          className="p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          className="p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer transition-colors"
         >
           <ChevronRight className="w-5 h-5" />
         </button>
