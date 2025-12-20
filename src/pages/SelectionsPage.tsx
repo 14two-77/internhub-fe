@@ -14,12 +14,16 @@ import { STATUS_CONFIG } from "../utils/constants";
 import { getGoogleMapsLink } from "../utils/helpers";
 import { CompanyLogo } from "../components/CompanyLogo";
 import type { JobOpening, SelectionStatus } from "../types";
+import { useDatasetStore } from "../stores/datasetStore";
 
 export const SelectionsPage = () => {
+  const dataset = useDatasetStore((s) => s.current);
+
   const { data: jobs, isLoading } = useQuery({
-    queryKey: ["jobs"],
-    queryFn: fetchJobs,
+    queryKey: ["jobs", dataset],
+    queryFn: () => fetchJobs(),
   });
+
   const selections = useSelectionStore((state) => state.selections);
   const setStatus = useSelectionStore((state) => state.setStatus);
   const [verticalSort, setVerticalSort] = useState<
@@ -95,7 +99,7 @@ export const SelectionsPage = () => {
   const handleDragStart = (
     e: React.DragEvent,
     openingId: number,
-    status: string,
+    status: string
   ) => {
     e.dataTransfer.setData("openingId", openingId.toString());
     e.dataTransfer.setData("fromStatus", status);
@@ -130,7 +134,7 @@ export const SelectionsPage = () => {
 
         let toIdx = 0;
         const children = (e.currentTarget as HTMLElement).querySelectorAll(
-          "a[draggable], div[draggable]",
+          "a[draggable], div[draggable]"
         );
         for (let i = 0; i < children.length; i++) {
           const childRect = children[i].getBoundingClientRect();
