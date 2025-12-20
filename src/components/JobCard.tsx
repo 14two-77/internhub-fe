@@ -15,12 +15,12 @@ export const JobCard = ({ job }: { job: JobOpening }) => {
     <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-indigo-300 dark:hover:border-indigo-700 transition-all duration-300 flex flex-col h-full group">
       <div className="p-5 flex-1 flex flex-col min-w-0">
         <div className="flex justify-between items-start mb-4 gap-3 relative">
-          {" "}
           <Link to={`/job/${job.openingId}`}>
             <div className="flex items-start gap-4 flex-1 min-w-0">
               <CompanyLogo
                 url={job.company.logoUrl}
                 name={job.company.companyNameEn}
+                size={14}
               />
               <div className="flex-1 min-w-0">
                 <h3 className="font-bold text-lg text-slate-900 dark:text-white leading-tight mb-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors line-clamp-2 wrap-break-word">
