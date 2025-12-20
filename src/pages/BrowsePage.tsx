@@ -5,22 +5,53 @@ import { JobCard } from "../components/JobCard";
 import { Pagination } from "../components/Pagination";
 import { fetchJobs } from "../services/api";
 import { useSelectionStore } from "../stores/selectionStore";
+import type { Tag } from "../types";
+import TagMultiSelect from "../components/MultiSelect";
 
-export const BrowsePage = () => {
+export const BrowsePage: React.FC = () => {
   const { data: jobs, isLoading } = useQuery({
     queryKey: ["jobs"],
     queryFn: fetchJobs,
   });
+
   const [search, setSearch] = useState("");
+  const [selectedTagIds, setSelectedTagIds] = useState<number[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [sortBy, setSortBy] = useState<
     "none" | "compensation" | "quota" | "students"
   >("none");
-  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
+  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
   const [excludeNotInterested, setExcludeNotInterested] = useState(false);
   const itemsPerPage = 9;
   const gridRef = React.useRef<HTMLDivElement>(null);
   const paginationRef = React.useRef<HTMLDivElement>(null);
+
+  // Collect all unique tags from jobs
+  const allTags = useMemo(() => {
+    if (!jobs) return [] as Tag[];
+    const map = new Map<number, Tag>();
+    for (const j of jobs) {
+      if (!j.tags) continue;
+      for (const t of j.tags) {
+        if (!map.has(t.tagId)) {
+          map.set(t.tagId, { tagId: t.tagId, tagName: t.tagName });
+        }
+      }
+    }
+    return Array.from(map.values()).sort((a, b) =>
+      a.tagName.localeCompare(b.tagName)
+    );
+  }, [jobs]);
+
+  const toggleTag = (tagId: number) => {
+    setSelectedTagIds((prev) =>
+      prev.includes(tagId)
+        ? prev.filter((id) => id !== tagId)
+        : [...prev, tagId]
+    );
+  };
+
+  const clearTags = () => setSelectedTagIds([]);
 
   const filteredJobs = useMemo(() => {
     if (!jobs) return [];
@@ -30,9 +61,18 @@ export const BrowsePage = () => {
       const lower = search.toLowerCase();
       result = result.filter(
         (j) =>
-          j.title.toLowerCase().includes(lower) ||
-          j.company.companyNameEn.toLowerCase().includes(lower) ||
-          j.tags.some((t) => t.tagName.toLowerCase().includes(lower))
+          (j.title || "").toLowerCase().includes(lower) ||
+          (j.company?.companyNameEn || "").toLowerCase().includes(lower) ||
+          (j.tags || []).some((t: any) =>
+            (t.tagName || "").toLowerCase().includes(lower)
+          )
+      );
+    }
+
+    if (selectedTagIds.length > 0) {
+      // OR semantics: job that has at least one of the selected tags
+      result = result.filter((j) =>
+        (j.tags || []).some((t: any) => selectedTagIds.includes(t.tagId))
       );
     }
 
@@ -62,11 +102,11 @@ export const BrowsePage = () => {
     }
 
     return result;
-  }, [jobs, search, sortBy, sortOrder, excludeNotInterested]);
+  }, [jobs, search, selectedTagIds, sortBy, sortOrder, excludeNotInterested]);
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [search, sortBy, sortOrder, excludeNotInterested]);
+  }, [search, sortBy, sortOrder, excludeNotInterested, selectedTagIds]);
 
   useEffect(() => {
     if (!gridRef.current) return;
@@ -171,17 +211,31 @@ export const BrowsePage = () => {
           </div>
         </div>
 
-        <div className="mt-8 relative max-w-xl">
-          <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-            <Search className="h-5 w-5 text-slate-400" />
+        {/* Search + Tag selector row */}
+        <div className="mt-8 flex flex-col sm:flex-row gap-3">
+          <div className="relative flex-1 max-w-xl min-w-1/3 h-fit">
+            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+              <Search className="h-5 w-5 text-slate-400" />
+            </div>
+            <input
+              type="text"
+              className="block w-full pl-11 pr-4 py-3.5 border border-slate-200 dark:border-slate-700 rounded-xl leading-5 bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent sm:text-sm shadow-sm transition-all duration-200"
+              placeholder="Search by job title, company, or skills..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
           </div>
-          <input
-            type="text"
-            className="block w-full pl-11 pr-4 py-3.5 border border-slate-200 dark:border-slate-700 rounded-xl leading-5 bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent sm:text-sm shadow-sm transition-all duration-200"
-            placeholder="Search by job title, company, or skills..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
+
+          {/* Tags multi-select */}
+          <div className="relative flex items-stretch">
+            <TagMultiSelect
+              options={allTags}
+              selected={selectedTagIds}
+              onChange={setSelectedTagIds}
+              placeholder="Filter by tags"
+              clearable
+            />
+          </div>
         </div>
 
         <div className="mt-6 flex flex-row gap-8">

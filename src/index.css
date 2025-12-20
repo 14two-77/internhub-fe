@@ -60,3 +60,21 @@
 .dark .prose li span {
   color: rgb(203 213 225) !important; /* slate-300 */
 }
+
+:root {
+  --bg: white;
+  --menu-bg: white;
+  --text: #0f172a;
+  --option-hover: #eef2ff;
+  --tag-bg: #e0e7ff;
+  --tag-text: #3730a3;
+}
+
+.dark {
+  --bg: #1e293b;
+  --menu-bg: #1e293b;
+  --text: #e5e7eb;
+  --option-hover: #334155;
+  --tag-bg: #312e81;
+  --tag-text: #c7d2fe;
+}
