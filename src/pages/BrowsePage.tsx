@@ -43,16 +43,6 @@ export const BrowsePage: React.FC = () => {
     );
   }, [jobs]);
 
-  const toggleTag = (tagId: number) => {
-    setSelectedTagIds((prev) =>
-      prev.includes(tagId)
-        ? prev.filter((id) => id !== tagId)
-        : [...prev, tagId]
-    );
-  };
-
-  const clearTags = () => setSelectedTagIds([]);
-
   const filteredJobs = useMemo(() => {
     if (!jobs) return [];
     let result = jobs;
@@ -272,21 +262,29 @@ export const BrowsePage: React.FC = () => {
             )}
           </div>
 
-          <div className="flex items-center gap-2">
+          <label
+            htmlFor="exclude-not-interested"
+            className="flex items-center gap-2.5 cursor-pointer select-none"
+          >
             <input
               type="checkbox"
               id="exclude-not-interested"
               checked={excludeNotInterested}
               onChange={(e) => setExcludeNotInterested(e.target.checked)}
-              className="w-4 h-4 rounded border-slate-300 dark:border-slate-600 cursor-pointer"
+              className="
+      h-4 w-4
+      rounded-md
+      border-slate-300 dark:border-slate-600
+      text-indigo-600
+      focus:ring-2 focus:ring-indigo-500
+      bg-white dark:bg-slate-800
+      transition
+    "
             />
-            <label
-              htmlFor="exclude-not-interested"
-              className="text-sm text-slate-700 dark:text-slate-300 cursor-pointer"
-            >
-              Exclude "Not Interested"
-            </label>
-          </div>
+            <span className="text-sm text-slate-700 dark:text-slate-300">
+              Exclude <span className="font-medium">“Not Interested”</span>
+            </span>
+          </label>
         </div>
       </div>
 
