@@ -1,3 +1,6 @@
+import clsx from "clsx";
+import { sizeClassMap } from "./sizeMap";
+
 export const CompanyLogo = ({
   // url,
   name,
@@ -7,6 +10,8 @@ export const CompanyLogo = ({
   name: string;
   size?: number;
 }) => {
+  const sizeClass = sizeClassMap[size];
+
   // const [error, setError] = useState(false);
 
   // useEffect(() => {
@@ -16,7 +21,12 @@ export const CompanyLogo = ({
   // if (error || !url) {
   return (
     <div
-      className={`w-${size} h-${size} rounded-xl bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center border border-indigo-200 dark:border-indigo-800 shrink-0`}
+      className={clsx(
+        sizeClass,
+        "rounded-xl bg-indigo-100 dark:bg-indigo-900/50",
+        "flex items-center justify-center shrink-0",
+        "border border-indigo-200 dark:border-indigo-800"
+      )}
     >
       <span className="text-indigo-700 dark:text-indigo-300 font-bold text-xl select-none">
         {name.charAt(0).toUpperCase()}
