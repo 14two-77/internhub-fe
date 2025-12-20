@@ -14,6 +14,6 @@ export const useSelectionStore = create<SelectionState>()(
     }),
     {
       name: "intern-selection-storage",
-    }
-  )
+    },
+  ),
 );

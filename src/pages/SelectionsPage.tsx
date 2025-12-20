@@ -95,7 +95,7 @@ export const SelectionsPage = () => {
   const handleDragStart = (
     e: React.DragEvent,
     openingId: number,
-    status: string
+    status: string,
   ) => {
     e.dataTransfer.setData("openingId", openingId.toString());
     e.dataTransfer.setData("fromStatus", status);
@@ -130,7 +130,7 @@ export const SelectionsPage = () => {
 
         let toIdx = 0;
         const children = (e.currentTarget as HTMLElement).querySelectorAll(
-          "a[draggable], div[draggable]"
+          "a[draggable], div[draggable]",
         );
         for (let i = 0; i < children.length; i++) {
           const childRect = children[i].getBoundingClientRect();

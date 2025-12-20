@@ -50,9 +50,7 @@ export const GoogleMap: React.FC<Props> = ({
   if (!GOOGLE_MAPS_API_KEY) {
     return (
       <div className={className}>
-        <div className="text-rose-600">
-          Google Maps API key is not set.
-        </div>
+        <div className="text-rose-600">Google Maps API key is not set.</div>
       </div>
     );
   }
@@ -80,7 +78,7 @@ export const GoogleMap: React.FC<Props> = ({
           { address },
           (
             results: google.maps.GeocoderResult[] | null,
-            status: google.maps.GeocoderStatus
+            status: google.maps.GeocoderStatus,
           ) => {
             if (cancelled) return;
 
@@ -101,7 +99,7 @@ export const GoogleMap: React.FC<Props> = ({
               console.warn("Geocode failed:", status);
               setError("Cannot show map for this address.");
             }
-          }
+          },
         );
       })
       .catch((err) => {
@@ -115,7 +113,7 @@ export const GoogleMap: React.FC<Props> = ({
   }, [address, zoom]);
 
   const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    address
+    address,
   )}`;
 
   return (

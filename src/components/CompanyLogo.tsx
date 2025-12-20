@@ -1,7 +1,5 @@
-import { useState, useEffect } from "react";
-
 export const CompanyLogo = ({
-  url,
+  // url,
   name,
   size = 14,
 }: {

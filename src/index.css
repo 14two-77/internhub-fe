@@ -3,7 +3,6 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
-
   /* 1. Global scrollbar (Firefox) */
   :root {
     scrollbar-width: thin;
