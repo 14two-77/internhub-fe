@@ -109,7 +109,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 7,
+      inStudentDraftCount: 8,
       isBookmarked: false,
     },
     {
@@ -162,7 +162,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 9,
+      inStudentDraftCount: 11,
       isBookmarked: false,
     },
     {
@@ -299,7 +299,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-04-29T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
+      inStudentDraftCount: 2,
       isBookmarked: false,
     },
     {
@@ -387,7 +387,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 15,
+      inStudentDraftCount: 17,
       isBookmarked: false,
     },
     {
@@ -456,7 +456,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 5,
+      inStudentDraftCount: 6,
       isBookmarked: false,
     },
     {
@@ -556,7 +556,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 7,
       isBookmarked: true,
     },
     {
@@ -595,7 +595,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 5,
       isBookmarked: false,
     },
     {
@@ -635,7 +635,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       isPublished: true,
       isAcceptingApplication: true,
       inStudentDraftCount: 5,
-      isBookmarked: true,
+      isBookmarked: false,
     },
     {
       openingId: 1070,
@@ -700,7 +700,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       isPublished: true,
       isAcceptingApplication: true,
       inStudentDraftCount: 9,
-      isBookmarked: true,
+      isBookmarked: false,
     },
     {
       openingId: 1073,
@@ -756,7 +756,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -898,7 +898,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 18,
+      inStudentDraftCount: 19,
       isBookmarked: false,
     },
     {
@@ -948,7 +948,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 9,
+      inStudentDraftCount: 10,
       isBookmarked: false,
     },
     {
@@ -1025,7 +1025,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 7,
+      inStudentDraftCount: 9,
       isBookmarked: false,
     },
     {
@@ -1078,8 +1078,8 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 20,
-      isBookmarked: true,
+      inStudentDraftCount: 21,
+      isBookmarked: false,
     },
     {
       openingId: 1101,
@@ -1131,7 +1131,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 12,
+      inStudentDraftCount: 10,
       isBookmarked: false,
     },
     {
@@ -1184,7 +1184,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 10,
+      inStudentDraftCount: 11,
       isBookmarked: false,
     },
     {
@@ -1281,7 +1281,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 14,
+      inStudentDraftCount: 16,
       isBookmarked: false,
     },
     {
@@ -1350,7 +1350,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 7,
+      inStudentDraftCount: 6,
       isBookmarked: false,
     },
     {
@@ -1460,8 +1460,8 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 5,
-      isBookmarked: true,
+      inStudentDraftCount: 3,
+      isBookmarked: false,
     },
     {
       openingId: 1113,
@@ -1509,7 +1509,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 4,
       isBookmarked: false,
     },
     {
@@ -1530,14 +1530,14 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
         "<p><br></p><p>ทำระบบบนแพลตฟอร์มนิยาย Dek-D หน้าที่ความรับผิดชอบหลักคือส่วนของ Front-end&nbsp;</p><p><br></p><p>เช่น การปรับปรุง UI ในฝั่งของ Web Frontend หรือ ฟีเจอร์ที่ยังไม่เคยมี ซึ่งทางหัวหน้าทีมจะเป็นคน plan งานเข้า Sprint Backlog ทุกสัปดาห์และมีการประชุมงานกันทุกสัปดาห์ เพื่อมีการ progress และ วัดผลประสิทธิภาพของงาน และช่วยเหลือ รวมถึงอธิบายรูปแบบงาน</p>",
       quota: 2,
       openForCooperativeInternship: false,
-      compensationAmount: 150,
+      compensationAmount: 200,
       compensationType: {
         compensationTypeId: 1,
         compensationType: "บาท/วัน",
       },
       workingCondition: "Hybrid",
       requirements:
-        '<p><strong style="color: rgb(81, 82, 81);">ผู้สมัครเลือกตำแหน่งที่ต้องการสมัครได้ 1 ตำแหน่ง&nbsp;แล้วส่งข้อมูลทางอีเมล ดังนี้</strong></p><p><span style="color: rgb(81, 82, 81);">﻿</span></p><ul><li>ข้อความแนะนำตัว รูปแบบฟรีสไตล์ ความยาวไม่จำกัด (ได้ทั้งข้อความ รูปภาพ หรือวิดีโอ) / resume</li></ul><p><br></p><ul><li>การบ้านตามตำแหน่งที่สมัคร   ดูรายละเอียดโจทย์ได้ที่</li></ul><p><br></p><p>https://vintage-painter-228.notion.site/Frontend-Quiz-9466837540634c4094dcc6f5ef7c4b4f?pvs=4</p><p><br></p><ul><li>ส่งอีเมลที่มีหัวข้อ สมัครฝึกงาน&nbsp;&nbsp;รอบมิถุนายน 2569 มาที่&nbsp;<span style="color: rgb(249, 101, 25);">intern@dek-d.com</span></li><li>สอบถามข้อมูลเพิ่มเติมที่&nbsp;<span style="color: rgb(249, 101, 25);">intern@dek-d.com</span></li></ul><p><br></p>',
+        '<p><strong style="color: rgb(81, 82, 81);">ผู้สมัครเลือกตำแหน่งที่ต้องการสมัครได้ 1 ตำแหน่ง&nbsp;แล้วส่งข้อมูลทางอีเมล ดังนี้</strong></p><p><span style="color: rgb(81, 82, 81);">﻿</span></p><ul><li>ข้อความแนะนำตัว รูปแบบฟรีสไตล์ ความยาวไม่จำกัด (ได้ทั้งข้อความ รูปภาพ หรือวิดีโอ) / resume</li></ul><p><br></p><ul><li>การบ้านตามตำแหน่งที่สมัคร ดูรายละเอียดโจทย์ได้ที่</li></ul><p><br></p><p>https://vintage-painter-228.notion.site/Frontend-Quiz-9466837540634c4094dcc6f5ef7c4b4f?pvs=4</p><p><br></p><ul><li>ส่งอีเมลที่มีหัวข้อ สมัครฝึกงาน&nbsp;&nbsp;รอบมิถุนายน 2569 มาที่&nbsp;<span style="color: rgb(249, 101, 25);">intern@dek-d.com</span></li><li>สอบถามข้อมูลเพิ่มเติมที่&nbsp;<span style="color: rgb(249, 101, 25);">intern@dek-d.com</span></li></ul>',
       tags: [],
       officeName: "สำนักงานใหญ่",
       officeAddressLine1:
@@ -1549,7 +1549,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-09T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 7,
+      inStudentDraftCount: 10,
       isBookmarked: false,
     },
     {
@@ -1605,7 +1605,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -1703,7 +1703,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 2,
+      inStudentDraftCount: 4,
       isBookmarked: false,
     },
     {
@@ -1722,7 +1722,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       title: "Backend, Ai Developer",
       description:
         '<p><strong>Department:</strong> ศูนย์ซ่อมและพัฒนาเครื่องจักรด้านวิศวกรรมอาหารสำเร็จรูป</p><p><br></p><ol><li>ออกแบบและพัฒนา <strong>AI Agents</strong> สำหรับวิเคราะห์ข้อมูลที่จัดเก็บในฐานข้อมูล <strong>PostgreSQL</strong> เพื่อสนับสนุนการทำงานด้านวิศวกรรมอาหารสำเร็จรูป</li><li>พัฒนา <strong>Back-End Services</strong> สำหรับเชื่อมต่อฐานข้อมูล ประมวลผลข้อมูล และสื่อสารกับระบบ AI</li><li>สร้าง API หรือบริการหลังบ้านสำหรับนำผลการวิเคราะห์ไปใช้งานในระบบต่าง ๆ ของหน่วยงาน</li><li>ทดลองใช้งานและออกแบบระบบที่เกี่ยวกับ</li><li class="ql-indent-1"><strong>RAG (Retrieval-Augmented Generation)</strong></li><li class="ql-indent-1"><strong>Vector Database </strong>เพื่อเพิ่มความสามารถในการตอบคำถามและวิเคราะห์ข้อมูล</li><li>ทำงานร่วมกับทีมวิศวกรรมและไอที เพื่อพัฒนาเครื่องมือที่ช่วยยกระดับการวิเคราะห์ข้อมูลจากเครื่องจักร</li><li>จัดทำเอกสารทางเทคนิค รายงานผลการทดสอบระบบ และข้อเสนอแนะการพัฒนาในอนาคต</li></ol>',
-      quota: 1,
+      quota: 2,
       openForCooperativeInternship: false,
       compensationAmount: null,
       compensationType: null,
@@ -1809,8 +1809,8 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 1,
-      isBookmarked: true,
+      inStudentDraftCount: 2,
+      isBookmarked: false,
     },
     {
       openingId: 1136,
@@ -1859,7 +1859,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
+      inStudentDraftCount: 3,
       isBookmarked: false,
     },
     {
@@ -1955,7 +1955,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 5,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -2123,7 +2123,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-29T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -2211,8 +2211,8 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 12,
-      isBookmarked: true,
+      inStudentDraftCount: 14,
+      isBookmarked: false,
     },
     {
       openingId: 1154,
@@ -2273,7 +2273,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 15,
+      inStudentDraftCount: 14,
       isBookmarked: false,
     },
     {
@@ -2526,7 +2526,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
+      inStudentDraftCount: 5,
       isBookmarked: false,
     },
     {
@@ -2662,7 +2662,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 3,
+      inStudentDraftCount: 2,
       isBookmarked: false,
     },
     {
@@ -2756,7 +2756,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       isPublished: true,
       isAcceptingApplication: true,
       inStudentDraftCount: 11,
-      isBookmarked: true,
+      isBookmarked: false,
     },
     {
       openingId: 1177,
@@ -2808,7 +2808,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 12,
+      inStudentDraftCount: 9,
       isBookmarked: false,
     },
     {
@@ -2862,7 +2862,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 5,
       isBookmarked: false,
     },
     {
@@ -2911,7 +2911,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 10,
+      inStudentDraftCount: 8,
       isBookmarked: false,
     },
     {
@@ -2947,7 +2947,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 8,
+      inStudentDraftCount: 10,
       isBookmarked: false,
     },
     {
@@ -3016,7 +3016,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 5,
+      inStudentDraftCount: 4,
       isBookmarked: false,
     },
     {
@@ -3196,7 +3196,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-02T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 5,
+      inStudentDraftCount: 4,
       isBookmarked: false,
     },
     {
@@ -3311,8 +3311,8 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-02T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
-      isBookmarked: true,
+      inStudentDraftCount: 5,
+      isBookmarked: false,
     },
     {
       openingId: 1200,
@@ -3363,7 +3363,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 7,
+      inStudentDraftCount: 10,
       isBookmarked: false,
     },
     {
@@ -3404,7 +3404,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 7,
+      inStudentDraftCount: 5,
       isBookmarked: false,
     },
     {
@@ -3457,7 +3457,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -3544,7 +3544,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 5,
+      inStudentDraftCount: 4,
       isBookmarked: false,
     },
     {
@@ -3622,7 +3622,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
+      inStudentDraftCount: 6,
       isBookmarked: false,
     },
     {
@@ -3832,7 +3832,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 21,
+      inStudentDraftCount: 24,
       isBookmarked: false,
     },
     {
@@ -3904,7 +3904,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 18,
+      inStudentDraftCount: 22,
       isBookmarked: true,
     },
     {
@@ -4034,7 +4034,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 19,
+      inStudentDraftCount: 20,
       isBookmarked: true,
     },
     {
@@ -4104,7 +4104,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 5,
+      inStudentDraftCount: 6,
       isBookmarked: false,
     },
     {
@@ -4162,7 +4162,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 3,
+      inStudentDraftCount: 4,
       isBookmarked: false,
     },
     {
@@ -4207,7 +4207,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 11,
+      inStudentDraftCount: 10,
       isBookmarked: false,
     },
     {
@@ -4329,7 +4329,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 8,
+      inStudentDraftCount: 5,
       isBookmarked: false,
     },
     {
@@ -4374,7 +4374,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 14,
+      inStudentDraftCount: 12,
       isBookmarked: false,
     },
     {
@@ -4430,7 +4430,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 12,
+      inStudentDraftCount: 15,
       isBookmarked: false,
     },
     {
@@ -4552,7 +4552,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 8,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -4613,7 +4613,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -4697,7 +4697,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-12-29T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 15,
+      inStudentDraftCount: 16,
       isBookmarked: false,
     },
     {
@@ -4849,7 +4849,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 5,
+      inStudentDraftCount: 4,
       isBookmarked: false,
     },
     {
@@ -4964,7 +4964,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
+      inStudentDraftCount: 6,
       isBookmarked: false,
     },
     {
@@ -5050,7 +5050,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-06-29T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 7,
+      inStudentDraftCount: 6,
       isBookmarked: false,
     },
     {
@@ -5148,7 +5148,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-06-29T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 9,
+      inStudentDraftCount: 13,
       isBookmarked: false,
     },
     {
@@ -5258,7 +5258,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-12-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 10,
+      inStudentDraftCount: 11,
       isBookmarked: false,
     },
     {
@@ -5314,7 +5314,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-12-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 7,
+      inStudentDraftCount: 8,
       isBookmarked: true,
     },
     {
@@ -5365,7 +5365,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-08-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -5508,7 +5508,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-08-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 4,
       isBookmarked: false,
     },
     {
@@ -5549,7 +5549,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 8,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -5594,7 +5594,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
+      inStudentDraftCount: 5,
       isBookmarked: false,
     },
     {
@@ -5643,7 +5643,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
+      inStudentDraftCount: 5,
       isBookmarked: false,
     },
     {
@@ -5684,7 +5684,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
+      inStudentDraftCount: 2,
       isBookmarked: false,
     },
     {
@@ -5839,7 +5839,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 5,
       isBookmarked: false,
     },
     {
@@ -5951,7 +5951,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 9,
+      inStudentDraftCount: 8,
       isBookmarked: false,
     },
     {
@@ -6094,7 +6094,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 8,
+      inStudentDraftCount: 10,
       isBookmarked: false,
     },
     {
@@ -6131,7 +6131,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -6179,7 +6179,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 2,
+      inStudentDraftCount: 4,
       isBookmarked: false,
     },
     {
@@ -6341,7 +6341,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
+      inStudentDraftCount: 3,
       isBookmarked: false,
     },
     {
@@ -6563,7 +6563,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 5,
+      inStudentDraftCount: 6,
       isBookmarked: false,
     },
     {
@@ -6663,7 +6663,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 8,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -6786,7 +6786,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -6844,7 +6844,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 11,
+      inStudentDraftCount: 9,
       isBookmarked: false,
     },
     {
@@ -6973,7 +6973,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 4,
       isBookmarked: false,
     },
     {
@@ -7242,7 +7242,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 11,
+      inStudentDraftCount: 12,
       isBookmarked: false,
     },
     {
@@ -7554,7 +7554,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
+      inStudentDraftCount: 1,
       isBookmarked: false,
     },
     {
@@ -7753,7 +7753,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 5,
+      inStudentDraftCount: 6,
       isBookmarked: false,
     },
     {
@@ -7795,7 +7795,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 2,
+      inStudentDraftCount: 3,
       isBookmarked: false,
     },
     {
@@ -7837,7 +7837,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 2,
+      inStudentDraftCount: 3,
       isBookmarked: false,
     },
     {
@@ -7873,7 +7873,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-17T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 2,
+      inStudentDraftCount: 1,
       isBookmarked: false,
     },
     {
@@ -8017,7 +8017,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 17,
+      inStudentDraftCount: 22,
       isBookmarked: false,
     },
     {
@@ -8065,7 +8065,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-06-29T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 2,
+      inStudentDraftCount: 3,
       isBookmarked: false,
     },
     {
@@ -8246,7 +8246,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 10,
+      inStudentDraftCount: 11,
       isBookmarked: false,
     },
     {
@@ -8309,7 +8309,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 10,
+      inStudentDraftCount: 9,
       isBookmarked: false,
     },
     {
@@ -8426,7 +8426,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       isPublished: true,
       isAcceptingApplication: true,
       inStudentDraftCount: 8,
-      isBookmarked: true,
+      isBookmarked: false,
     },
     {
       openingId: 1457,
@@ -8767,8 +8767,8 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 26,
-      isBookmarked: true,
+      inStudentDraftCount: 27,
+      isBookmarked: false,
     },
     {
       openingId: 1462,
@@ -8827,7 +8827,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 8,
+      inStudentDraftCount: 9,
       isBookmarked: false,
     },
     {
@@ -8879,7 +8879,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 13,
+      inStudentDraftCount: 14,
       isBookmarked: false,
     },
     {
@@ -9007,7 +9007,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 8,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -9067,7 +9067,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 7,
+      inStudentDraftCount: 6,
       isBookmarked: false,
     },
     {
@@ -9159,7 +9159,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 12,
+      inStudentDraftCount: 11,
       isBookmarked: false,
     },
     {
@@ -9249,7 +9249,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 14,
+      inStudentDraftCount: 20,
       isBookmarked: false,
     },
     {
@@ -9347,8 +9347,8 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 17,
-      isBookmarked: true,
+      inStudentDraftCount: 15,
+      isBookmarked: false,
     },
     {
       openingId: 1482,
@@ -9449,7 +9449,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 17,
+      inStudentDraftCount: 20,
       isBookmarked: false,
     },
     {
@@ -9513,7 +9513,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 8,
+      inStudentDraftCount: 9,
       isBookmarked: false,
     },
     {
@@ -9560,8 +9560,8 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-06-29T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 11,
-      isBookmarked: true,
+      inStudentDraftCount: 12,
+      isBookmarked: false,
     },
     {
       openingId: 1493,
@@ -9637,7 +9637,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 8,
+      inStudentDraftCount: 12,
       isBookmarked: false,
     },
     {
@@ -9685,7 +9685,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 7,
+      inStudentDraftCount: 8,
       isBookmarked: false,
     },
     {
@@ -9808,7 +9808,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 8,
       isBookmarked: false,
     },
     {
@@ -10121,7 +10121,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 2,
+      inStudentDraftCount: 3,
       isBookmarked: false,
     },
     {
@@ -10167,7 +10167,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 5,
+      inStudentDraftCount: 6,
       isBookmarked: false,
     },
     {
@@ -10241,7 +10241,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -10303,7 +10303,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-08-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -10357,7 +10357,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-10-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 5,
+      inStudentDraftCount: 4,
       isBookmarked: false,
     },
     {
@@ -10407,7 +10407,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-10-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 8,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -10600,7 +10600,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 3,
+      inStudentDraftCount: 2,
       isBookmarked: false,
     },
     {
@@ -10712,7 +10712,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 1,
+      inStudentDraftCount: 2,
       isBookmarked: false,
     },
     {
@@ -10807,7 +10807,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 2,
+      inStudentDraftCount: 3,
       isBookmarked: false,
     },
     {
@@ -10879,7 +10879,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 3,
+      inStudentDraftCount: 2,
       isBookmarked: false,
     },
     {
@@ -10921,7 +10921,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 5,
+      inStudentDraftCount: 6,
       isBookmarked: false,
     },
     {
@@ -10970,7 +10970,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 5,
+      inStudentDraftCount: 6,
       isBookmarked: false,
     },
     {
@@ -11066,7 +11066,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 3,
+      inStudentDraftCount: 1,
       isBookmarked: false,
     },
     {
@@ -11283,7 +11283,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 6,
+      inStudentDraftCount: 5,
       isBookmarked: false,
     },
     {
@@ -11395,7 +11395,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 10,
+      inStudentDraftCount: 7,
       isBookmarked: false,
     },
     {
@@ -11447,7 +11447,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 10,
+      inStudentDraftCount: 11,
       isBookmarked: false,
     },
     {
@@ -11493,7 +11493,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 3,
+      inStudentDraftCount: 4,
       isBookmarked: false,
     },
     {
@@ -11560,7 +11560,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 10,
+      inStudentDraftCount: 9,
       isBookmarked: false,
     },
     {
@@ -11685,7 +11685,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 2,
+      inStudentDraftCount: 3,
       isBookmarked: false,
     },
     {
@@ -11741,8 +11741,8 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       },
       title: "AI Intern ",
       description:
-        '<h3>About DeeMoney</h3><p>DeeMoney is Thailand’s leading fintech company, providing fast, transparent, and secure cross-border payment and foreign exchange services for both individuals and businesses. We are actively exploring AI and data-driven solutions to enhance operational efficiency, customer experience, and decision-making.</p><h3><br></h3><h3>Role Overview</h3><p>As an <strong>AI Intern</strong>, you will work closely with our Data, IT, and Business teams to explore and develop AI-driven solutions that support DeeMoney’s internal operations and business growth. This internship is ideal for students who are passionate about AI, data, and real-world problem solving in a fintech environment.</p><p><br></p><h3>Key Responsibilities</h3><ul><li>Assist in developing and testing <strong>AI/ML or rule-based automation solutions</strong> for business use cases</li><li>Support <strong>data preparation, data cleaning, and basic analysis</strong> for AI projects</li><li>Explore use cases such as:</li><li class="ql-indent-1">Process automation (RPA + AI)</li><li class="ql-indent-1">Customer service support (chatbot / FAQ automation)</li><li class="ql-indent-1">Internal reporting &amp; insights</li><li class="ql-indent-1">AI-assisted document or data processing</li><li>Research new AI tools, models, or frameworks and summarize findings for the team</li><li>Prepare documentation and simple presentations of project outcomes</li><li>Collaborate with cross-functional teams (IT, Operations, Business)</li></ul><p><br></p><h3>Qualifications</h3><ul><li>Currently pursuing a degree in:</li><li class="ql-indent-1">Computer Engineering / Computer Science</li><li class="ql-indent-1">Data Science / AI / CEDT or related fields</li><li>Basic understanding of:</li><li class="ql-indent-1">Python or similar programming language</li><li class="ql-indent-1">Data concepts (CSV, Excel, SQL – basic level)</li><li class="ql-indent-1">AI / Machine Learning fundamentals (coursework is sufficient)</li><li>Interest in <strong>AI, automation, and fintech</strong></li><li>Good analytical thinking and problem-solving skills</li><li>Able to communicate in English (basic–intermediate)</li></ul><h3><br></h3><h3>Nice to Have (Not Required)</h3><ul><li>Experience with Python libraries (Pandas, NumPy, Scikit-learn)</li><li>Familiarity with Power BI, SQL, RPA, or cloud platforms</li><li>Experience using AI tools (ChatGPT, Copilot, AutoML, etc.)</li><li>Basic understanding of APIs or system integration</li></ul><h3><br></h3><h3>What You Will Gain</h3><ul><li>Hands-on experience with <strong>real AI use cases in a fintech company</strong></li><li>Mentorship from experienced IT, Data, and Business professionals</li><li>Opportunity to contribute to <strong>production-related or proof-of-concept projects</strong></li><li>Exposure to fintech operations, compliance-aware environments, and enterprise systems</li><li>Internship certificate and evaluation</li></ul><p><br></p>',
-      quota: 1,
+        '<h3>About DeeMoney</h3><p>DeeMoney is Thailand’s leading fintech company, providing fast, transparent, and secure cross-border payment and foreign exchange services for both individuals and businesses. We are actively exploring AI and data-driven solutions to enhance operational efficiency, customer experience, and decision-making.</p><h3><br></h3><h3>Role Overview</h3><p>As an <strong>AI Intern</strong>, you will work closely with our Data, IT, and Business teams to explore and develop AI-driven solutions that support DeeMoney’s internal operations and business growth. This internship is ideal for students who are passionate about AI, data, and real-world problem solving in a fintech environment.</p><p><br></p><h3>Key Responsibilities</h3><ul><li>Assist in developing and testing <strong>AI/ML or rule-based automation solutions</strong> for business use cases</li><li>Support <strong>data preparation, data cleaning, and basic analysis</strong> for AI projects</li><li>Explore use cases such as:</li><li class="ql-indent-1">Process automation (RPA + AI)</li><li class="ql-indent-1">Customer service support (chatbot / FAQ automation)</li><li class="ql-indent-1">Internal reporting &amp; insights</li><li class="ql-indent-1">AI-assisted document or data processing</li><li>Research new AI tools, models, or frameworks and summarize findings for the team</li><li>Prepare documentation and simple presentations of project outcomes</li><li>Collaborate with cross-functional teams (IT, Operations, Business)</li></ul><p><br></p><h3>Qualifications</h3><ul><li>Currently pursuing a degree in:</li><li class="ql-indent-1">Computer Engineering / Computer Science</li><li class="ql-indent-1">Data Science / AI / CEDT or related fields</li><li>Basic understanding of:</li><li class="ql-indent-1">Python or similar programming language</li><li class="ql-indent-1">Data concepts (CSV, Excel, SQL – basic level)</li><li class="ql-indent-1">AI / Machine Learning fundamentals (coursework is sufficient)</li><li>Interest in <strong>AI, automation, and fintech</strong></li><li>Good analytical thinking and problem-solving skills</li><li>Able to communicate in English (basic–intermediate)</li></ul><h3><br></h3><h3>Nice to Have (Not Required)</h3><ul><li>Experience with Python libraries (Pandas, NumPy, Scikit-learn)</li><li>Familiarity with Power BI, SQL, RPA, or cloud platforms</li><li>Experience using AI tools (ChatGPT, Copilot, AutoML, etc.)</li><li>Basic understanding of APIs or system integration</li></ul><h3><br></h3><h3>What You Will Gain</h3><ul><li>Hands-on experience with <strong>real AI use cases in a fintech company</strong></li><li>Mentorship from experienced IT, Data, and Business professionals</li><li>Opportunity to contribute to <strong>production-related or proof-of-concept projects</strong></li><li>Exposure to fintech operations, compliance-aware environments, and enterprise systems</li><li>Internship certificate and evaluation</li></ul>',
+      quota: 2,
       openForCooperativeInternship: false,
       compensationAmount: null,
       compensationType: {
@@ -11784,7 +11784,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-08-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 1,
+      inStudentDraftCount: 3,
       isBookmarked: false,
     },
     {
@@ -11867,7 +11867,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
+      inStudentDraftCount: 6,
       isBookmarked: false,
     },
     {
@@ -11912,7 +11912,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
+      inStudentDraftCount: 5,
       isBookmarked: false,
     },
     {
@@ -11983,7 +11983,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: null,
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 15,
+      inStudentDraftCount: 13,
       isBookmarked: false,
     },
     {
@@ -12031,7 +12031,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-23T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 4,
+      inStudentDraftCount: 3,
       isBookmarked: false,
     },
     {
@@ -12138,7 +12138,7 @@ export const MOCK_DATA_JUNIOR: { items: JobOpening[] } = {
       endDate: "2026-07-30T17:00:00.000Z",
       isPublished: true,
       isAcceptingApplication: true,
-      inStudentDraftCount: 7,
+      inStudentDraftCount: 8,
       isBookmarked: false,
     },
   ],
